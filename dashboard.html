@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة التحكم - DRAGON COIN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>لوحة التحكم</h1>
+  <p id="welcome"></p>
+  <p>الرصيد: <span id="balance"></span> DRAGON COIN</p>
+
+  <div class="send-box">
+    <h2>إرسال عملة</h2>
+    <input id="toUser" placeholder="اسم المستلم">
+    <input id="amount" type="number" placeholder="المبلغ">
+    <button onclick="sendCoin()">إرسال</button>
+  </div>
+
+  <div class="transactions-box">
+    <h2>المعاملات</h2>
+    <ul id="transactions"></ul>
+  </div>
+
+  <button onclick="logout()" class="logout-btn">تسجيل الخروج</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
